@@ -1,0 +1,49 @@
+# --- Configuração Base ---
+baseURL = "https://prendeumatou.com.br/"
+languageCode = "pt-br"
+title = "Prendeu, Matou"
+theme = "PaperMod"
+
+# --- Configurações do Tema PaperMod ---
+[params]
+  description = "Análises críticas sobre o Direito Penal do Inimigo e a expansão punitiva."
+  author = "Prendeu, Matou" # Ou seu nome, se preferir
+  defaultTheme = "light" # Opções: "light", "dark", "auto"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+
+# --- Página Inicial ---
+[params.homeInfoParams]
+  Title = "Direito Penal do Inimigo ⚖️"
+  Content = "Um espaço dedicado à análise crítica da supressão de garantias, do estado de exceção permanente e da teoria de Günther Jakobs."
+
+# --- Menu Principal (Links no Topo) ---
+[menu]
+  [[menu.main]]
+    identifier = "artigos"
+    name = "Artigos"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "sobre"
+    name = "Sobre o Projeto"
+    url = "/sobre/"
+    weight = 20
+
+# --- Ícones das Redes Sociais ---
+[[params.socialIcons]]
+  name = "instagram"
+  url = "https://instagram.com/prendeumatou"
+
+[[params.socialIcons]]
+  name = "twitter" # O ícone do X ainda é "twitter"
+  url = "https://twitter.com/prendeumatou"
+
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://linkedin.com/in/prendeumatou" # Ajuste se for /company/
+
+[[params.socialIcons]]
+  name = "email"
+  url = "mailto:contato@prendeumatou.com.br" # Crie este e-mail
