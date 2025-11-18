@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://prendeumatou.com.br/sitemap.xml

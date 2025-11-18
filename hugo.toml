@@ -1,24 +1,76 @@
-# --- Configuração Base ---
+# --- BASE CONFIGURATION ---
 baseURL = "https://prendeumatou.com.br/"
 languageCode = "pt-br"
 title = "Prendeu, Matou"
 theme = "PaperMod"
 
-# --- Configurações do Tema PaperMod ---
+# CORRIGIDO: Substituído o 'paginate = 10' pela nova estrutura
+[pagination]
+  pagerSize = 10
+
+enableRobotsTXT = true # Cria o arquivo robots.txt para SEO
+buildDrafts = false # Não publica rascunhos em produção
+buildFuture = false # Não publica posts com data futura
+buildExpired = false # Não publica posts expirados
+canonifyURLs = true # Garante URLs consistentes (útil se usar domínios diferentes)
+
+# Habilita o Minify para CSS, JS, HTML (melhora performance)
+[minify]
+  disableCSS = false
+  disableHTML = false
+  disableJS = false
+  disableJSON = false
+  disableSVG = false
+  disableTOML = false
+  disableXML = false
+  minifyOutput = true # Aplica minificação no output geral
+
+# --- TAXONOMIES (Categorias e Tags) ---
+# Essencial para organizar seu conteúdo de forma escalável
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series" # Para agrupar artigos em uma sequência (ex: "Série sobre Jakobs")
+
+# --- PARAMETERS FOR THEME (PaperMod) ---
 [params]
+  env = "production" # Define o ambiente (útil para Analytics, etc.)
+  defaultTheme = "dark" # Definindo tema escuro como padrão para combinar com logo
+  disableThemeToggle = false # Permite ao usuário alternar entre claro/escuro
+  ShowShareButtons = true
+  ShowReadingTime = true
+  ShowPostNavLinks = true # Links para próximo/anterior artigo
+  ShowBreadCrumbs = true # Trilha de navegação
+  ShowCodeCopyButtons = true # Botão de copiar em blocos de código (útil se tiver código no futuro)
+  comments = false # Desativa comentários globalmente (pode ser ativado por post)
   description = "Análises críticas sobre o Direito Penal do Inimigo e a expansão punitiva."
   author = "Prendeu, Matou" # Ou seu nome, se preferir
-  defaultTheme = "light" # Opções: "light", "dark", "auto"
-  ShowReadingTime = true
-  ShowShareButtons = true
-  ShowPostNavLinks = true
+  keywords = ["Direito Penal", "Inimigo", "Jakobs", "Garantismo", "Punitivismo", "Estado de Exceção"] # Para SEO
+  images = ["/capa_social.png"] # Imagem padrão para compartilhamento em redes sociais (Open Graph)
+  
+  # Apenas a versão correta do custom_css
+  custom_css = ["/css/fonts.css", "/css/custom.css"] # Ordem importa: fonts primeiro
 
-# --- Página Inicial ---
+# --- Home Page (Página Inicial) ---
 [params.homeInfoParams]
   Title = "Direito Penal do Inimigo ⚖️"
   Content = "Um espaço dedicado à análise crítica da supressão de garantias, do estado de exceção permanente e da teoria de Günther Jakobs."
 
-# --- Menu Principal (Links no Topo) ---
+# --- Social Icons (Seu usuário @prendeumatou) ---
+[[params.socialIcons]]
+  name = "instagram"
+  url = "https://instagram.com/prendeumatou"
+[[params.socialIcons]]
+  name = "twitter"
+  url = "https://twitter.com/prendeumatou"
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://linkedin.com/in/prendeumatou"
+[[params.socialIcons]]
+  name = "email"
+  url = "mailto:contato@prendeumatou.com.br"
+
+# --- MENU PRINCIPAL (Topo) ---
 [menu]
   [[menu.main]]
     identifier = "artigos"
@@ -27,23 +79,30 @@ theme = "PaperMod"
     weight = 10
   [[menu.main]]
     identifier = "sobre"
-    name = "Sobre o Projeto"
+    name = "Sobre"
     url = "/sobre/"
     weight = 20
+  [[menu.main]]
+    identifier = "categorias"
+    name = "Categorias"
+    url = "/categories/"
+    weight = 30 # Adiciona um link para todas as categorias
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 40 # Adiciona um link para todas as tags
 
-# --- Ícones das Redes Sociais ---
-[[params.socialIcons]]
-  name = "instagram"
-  url = "https://instagram.com/prendeumatou"
-
-[[params.socialIcons]]
-  name = "twitter" # O ícone do X ainda é "twitter"
-  url = "https://twitter.com/prendeumatou"
-
-[[params.socialIcons]]
-  name = "linkedin"
-  url = "https://linkedin.com/in/prendeumatou" # Ajuste se for /company/
-
-[[params.socialIcons]]
-  name = "email"
-  url = "mailto:contato@prendeumatou.com.br" # Crie este e-mail
+# --- RENDER HOOKS (Para processar Markdown de forma personalizada) ---
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = true
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true # Permite HTML dentro do Markdown (cuidado com segurança, mas útil para customização)

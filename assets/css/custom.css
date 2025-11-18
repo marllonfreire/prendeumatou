@@ -1,0 +1,74 @@
+/* --- custom.css --- */
+
+/* Estilo para o modo escuro, alinhado com o logo */
+:root {
+    --theme: #000000; /* Fundo preto */
+    --entry: #1a1a1a; /* Fundo dos cards/posts um pouco mais claro que o fundo */
+    --primary: #ffffff; /* Texto principal branco */
+    --secondary: #cccccc; /* Texto secundário (data, resumo) */
+    --tertiary: #888888; /* Detalhes menores */
+    --link: #f6821f; /* Cor de link Cloudflare/Laranja para contraste */
+    --footer: #1a1a1a; /* Fundo do rodapé */
+}
+
+/* Garante que o tema escuro seja o padrão */
+body.dark {
+    background-color: var(--theme);
+    color: var(--primary);
+}
+
+/* Personalização do Título do Site/Logo */
+.header-logo .logo .logo-text {
+    display: none; /* Esconde o texto "Prendeu, Matou" do PaperMod */
+}
+
+.header-logo .logo {
+    display: block;
+    width: 200px; /* Ajuste a largura conforme seu logo */
+    height: 40px; /* Ajuste a altura */
+    background: url('/images/logo_prendeumatou.png') no-repeat center center;
+    background-size: contain;
+    text-indent: -9999px; /* Esconde o texto acessível */
+}
+
+/* Hover nos links */
+a:hover {
+    color: var(--link);
+    text-decoration: underline;
+}
+
+/* Títulos de posts e páginas */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary);
+}
+
+/* Botões (ex: "Clique em mim" do exemplo inicial, ou futuros) */
+button, .button {
+    background-color: var(--link);
+    color: var(--primary);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+button:hover, .button:hover {
+    background-color: darken(var(--link), 10%); /* Escurece um pouco no hover */
+}
+
+/* Ajustes gerais de tipografia */
+body {
+    font-family: 'Open Sans', sans-serif; /* Usaremos essa fonte */
+    font-size: 1.1em;
+    line-height: 1.7;
+}
+
+/* Onde aparece o título dos posts na lista */
+.post-title a {
+    color: var(--primary);
+}
+.post-title a:hover {
+    color: var(--link);
+}
