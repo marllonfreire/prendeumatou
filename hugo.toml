@@ -1,7 +1,7 @@
 # --- BASE CONFIGURATION ---
 baseURL = "https://prendeumatou.com.br/"
 languageCode = "pt-br"
-title = "Prendeu, Matou"
+title = "Prendeu Matou"
 theme = "PaperMod"
 
 # CORRIGIDO: Substituído o 'paginate = 10' pela nova estrutura
