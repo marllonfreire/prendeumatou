@@ -57,15 +57,28 @@ canonifyURLs = true # Garante URLs consistentes (útil se usar domínios diferen
   Content = "Um espaço dedicado à análise crítica da supressão de garantias, do estado de exceção permanente e da teoria de Günther Jakobs."
 
 # --- Social Icons (Seu usuário @prendeumatou) ---
+# CORRIGIDO: Removido o recuo
 [[params.socialIcons]]
   name = "instagram"
-  url = "https://instagram.com/prendeumatou"
+  url = "https://www.instagram.com/prendeumatou"
 [[params.socialIcons]]
-  name = "twitter"
-  url = "https://twitter.com/prendeumatou"
+  name = "twitter" # O nome do ícone "x" ainda é "twitter" no PaperMod
+  url = "https://x.com/prendeumatou"
+[[params.socialIcons]]
+  name = "facebook"
+  url = "https://www.facebook.com/prendeumatou"
+[[params.socialIcons]]
+  name = "tiktok"
+  url = "https://www.tiktok.com/@prendeumatou"
+[[params.socialIcons]]
+  name = "twitch"
+  url = "https://www.twitch.tv/prendeumatou"
+[[params.socialIcons]]
+  name = "youtube"
+  url = "https://www.youtube.com/@prendeumatou"
 [[params.socialIcons]]
   name = "linkedin"
-  url = "https://linkedin.com/in/prendeumatou"
+  url = "https://linkedin.com/in/prendeumatou" # Mantido, caso use no futuro
 [[params.socialIcons]]
   name = "email"
   url = "mailto:contato@prendeumatou.com.br"
