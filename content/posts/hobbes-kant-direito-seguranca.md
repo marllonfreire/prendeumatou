@@ -10,4 +10,4 @@ summary: "A base moral para o endurecimento: o cidadão tem o direito de exigir 
 
 *Este artigo está em desenvolvimento. Analisaremos como os filósofos clássicos justificam a exclusão daqueles que rompem o contrato social.*
 
-[Link de volta para o Guia Principal]({{< relref "o-que-e-direito-penal-do-inimigo.md" >}})
+[Link de volta para o Guia Principal]({{< relref "posts/o-que-e-direito-penal-do-inimigo.md" >}})

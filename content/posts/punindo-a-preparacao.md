@@ -10,4 +10,4 @@ summary: "Por que esperar o tiro? No combate ao terror e às facções, a simple
 
 *Este artigo está em desenvolvimento. Discutiremos a técnica jurídica de antecipar a punição para a fase de preparação, eliminando a necessidade de esperar o dano ocorrer.*
 
-[Link de volta para o Guia Principal]({{< relref "o-que-e-direito-penal-do-inimigo.md" >}})
+[Link de volta para o Guia Principal]({{< relref "posts/o-que-e-direito-penal-do-inimigo.md" >}})

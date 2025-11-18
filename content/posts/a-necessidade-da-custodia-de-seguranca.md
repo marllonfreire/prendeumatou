@@ -10,4 +10,4 @@ summary: "Para o inimigo, a pena não é comunicação, é coação física. Def
 
 *Este artigo está em desenvolvimento. Aqui detalharemos a proposta de um regime prisional onde o foco é impedir a comunicação e a reiteração criminosa, não a ressocialização imediata.*
 
-[Link de volta para o Guia Principal]({{< relref "o-que-e-direito-penal-do-inimigo.md" >}})
+[Link de volta para o Guia Principal]({{< relref "posts/o-que-e-direito-penal-do-inimigo.md" >}})
