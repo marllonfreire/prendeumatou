@@ -90,11 +90,21 @@ canonifyURLs = true # Garante URLs consistentes (útil se usar domínios diferen
     name = "Artigos"
     url = "/posts/"
     weight = 10
+  
+  # NOVO: Adicione isto para facilitar a navegação por temas
+  [[menu.main]]
+    identifier = "series"
+    name = "Séries Especiais"
+    url = "/series/"
+    weight = 15
+
   [[menu.main]]
     identifier = "sobre"
     name = "Sobre"
     url = "/sobre/"
     weight = 20
+    
+  # ... (o resto de categorias e tags pode ficar igual)
   [[menu.main]]
     identifier = "categorias"
     name = "Categorias"

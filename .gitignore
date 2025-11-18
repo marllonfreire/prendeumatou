@@ -1,0 +1,8 @@
+# Ignorar pasta de build
+public/
+resources/
+.hugo_build.lock
+
+# Ignorar arquivos do sistema
+.DS_Store
+Thumbs.db
