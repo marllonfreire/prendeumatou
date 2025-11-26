@@ -2,10 +2,10 @@
 title: "Sobre o Projeto"
 layout: "page"
 url: "/sobre/"
-summary: "Conheça a missão do Prendeu, Matou e a defesa de um novo paradigma penal."
+summary: "Conheça a missão do Prendeu Matou e a defesa de um novo paradigma penal."
 ---
 
-O projeto **Prendeu, Matou** nasceu da necessidade urgente de um debate público sóbrio e técnico sobre a falência da segurança pública no Brasil.
+O projeto **Prendeu Matou** nasceu da necessidade urgente de um debate público sóbrio e técnico sobre a falência da segurança pública no Brasil.
 
 O nome provoca, mas o conteúdo fundamenta. Nossa missão é analisar a legislação penal sob a ótica do **Direito Penal do Inimigo** (*Feindstrafrecht*), teoria formulada pelo jurista alemão Günther Jakobs.
 
