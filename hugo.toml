@@ -1,0 +1,97 @@
+# --- BASE CONFIGURATION ---
+baseURL = "https://prendeumatou.com.br/"
+languageCode = "pt-br"
+title = "Prendeu, Matou"
+theme = "PaperMod"
+
+[pagination]
+  pagerSize = 10
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+canonifyURLs = true
+
+[minify]
+  disableCSS = false
+  disableHTML = false
+  disableJS = false
+  disableJSON = false
+  disableSVG = false
+  disableTOML = false
+  disableXML = false
+  minifyOutput = true
+
+# --- TAXONOMIES ---
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+# --- PARAMETERS ---
+[params]
+  env = "production"
+  defaultTheme = "dark"
+  disableThemeToggle = false
+  ShowShareButtons = true
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  comments = false
+  description = "Análises críticas sobre o Direito Penal do Inimigo e a expansão punitiva."
+  author = "Prendeu, Matou"
+  keywords = ["Direito Penal", "Inimigo", "Jakobs", "Garantismo", "Punitivismo", "Estado de Exceção"]
+  images = ["/capa_social.png"]
+  
+  # CSS Personalizado
+  custom_css = ["/css/fonts.css", "/css/custom.css"]
+
+[params.homeInfoParams]
+  Title = "Direito Penal do Inimigo ⚖️"
+  Content = "Um espaço dedicado à análise crítica da supressão de garantias, do estado de exceção permanente e da teoria de Günther Jakobs."
+
+# --- REDES SOCIAIS ---
+[[params.socialIcons]]
+  name = "instagram"
+  url = "https://www.instagram.com/prendeumatou"
+[[params.socialIcons]]
+  name = "twitter"
+  url = "https://x.com/prendeumatou"
+[[params.socialIcons]]
+  name = "facebook"
+  url = "https://www.facebook.com/prendeumatou"
+[[params.socialIcons]]
+  name = "tiktok"
+  url = "https://www.tiktok.com/@prendeumatou"
+[[params.socialIcons]]
+  name = "twitch"
+  url = "https://www.twitch.tv/prendeumatou"
+[[params.socialIcons]]
+  name = "youtube"
+  url = "https://www.youtube.com/@prendeumatou"
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://linkedin.com/in/prendeumatou"
+[[params.socialIcons]]
+  name = "email"
+  url = "mailto:contato@prendeumatou.com.br"
+
+# --- MENU ---
+[menu]
+  [[menu.main]]
+    identifier = "artigos"
+    name = "Artigos"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "series"
+    name = "Séries Especiais"
+    url = "/series/"
+    weight = 15
+  [[menu.main]]
+    identifier = "sobre"
+    name = "Sobre"
+    url = "/sobre/"
+    weight = 20

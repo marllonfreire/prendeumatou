@@ -1,0 +1,45 @@
+/* --- custom.css --- */
+:root {
+    --theme: #000000; /* Preto Infinito */
+    --entry: #1a1a1a;
+    --primary: #ffffff; /* Branco Puro */
+    --secondary: #cccccc;
+    --tertiary: #888888;
+    --link: #f6821f;
+    --footer: #000000;
+}
+
+body.dark {
+    background-color: var(--theme);
+    color: var(--primary);
+}
+
+/* Substitui Título por Logo */
+.header-logo .logo .logo-text {
+    display: none;
+}
+
+.header-logo .logo {
+    display: block;
+    width: 200px;
+    height: 50px; /* Ajuste se necessário */
+    background: url('/images/logo_prendeumatou.png') no-repeat center center;
+    background-size: contain;
+    text-indent: -9999px;
+}
+
+button, .button {
+    background-color: var(--link);
+    color: var(--primary);
+    border: none;
+    border-radius: 5px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.7;
+}
+
+.post-title a {
+    color: var(--primary);
+}
