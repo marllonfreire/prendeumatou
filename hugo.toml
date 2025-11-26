@@ -1,9 +1,10 @@
 # --- BASE CONFIGURATION ---
 baseURL = "https://prendeumatou.com.br/"
 languageCode = "pt-br"
-title = "Prendeu, Matou"
+title = "Prendeu Matou"
 theme = "PaperMod"
 
+# Configuração correta de paginação
 [pagination]
   pagerSize = 10
 
@@ -13,6 +14,7 @@ buildFuture = false
 buildExpired = false
 canonifyURLs = true
 
+# Habilita o Minify para performance
 [minify]
   disableCSS = false
   disableHTML = false
@@ -23,13 +25,13 @@ canonifyURLs = true
   disableXML = false
   minifyOutput = true
 
-# --- TAXONOMIES ---
+# --- TAXONOMIAS ---
 [taxonomies]
   category = "categories"
   tag = "tags"
   series = "series"
 
-# --- PARAMETERS ---
+# --- PARÂMETROS GERAIS DO TEMA ---
 [params]
   env = "production"
   defaultTheme = "dark"
@@ -45,38 +47,50 @@ canonifyURLs = true
   keywords = ["Direito Penal", "Inimigo", "Jakobs", "Garantismo", "Punitivismo", "Estado de Exceção"]
   images = ["/capa_social.png"]
   
-  # CSS Personalizado
+  # CSS Personalizado e Fontes
   custom_css = ["/css/fonts.css", "/css/custom.css"]
 
-[params.homeInfoParams]
-  Title = "Direito Penal do Inimigo ⚖️"
-  Content = "Um espaço dedicado à análise crítica da supressão de garantias, do estado de exceção permanente e da teoria de Günther Jakobs."
+  # --- MODO PERFIL (HOME LIMPA) ---
+  [params.profileMode]
+    enabled = true
+    title = "PRENDEU MATOU"
+    subtitle = "Segurança Cognitiva • Neutralização • Estado de Exceção"
+    imageUrl = "/capa_social.png"
+    imageTitle = "Direito Penal do Inimigo"
+    imageWidth = 220
+    imageHeight = 220
+    
+    # Botões da Home
+    [[params.profileMode.buttons]]
+      name = "Ler Artigos"
+      url = "/posts"
+    
+    [[params.profileMode.buttons]]
+      name = "Sobre o Projeto"
+      url = "/sobre"
 
-# --- REDES SOCIAIS ---
-[[params.socialIcons]]
-  name = "instagram"
-  url = "https://www.instagram.com/prendeumatou"
-[[params.socialIcons]]
-  name = "twitter"
-  url = "https://x.com/prendeumatou"
-[[params.socialIcons]]
-  name = "facebook"
-  url = "https://www.facebook.com/prendeumatou"
-[[params.socialIcons]]
-  name = "tiktok"
-  url = "https://www.tiktok.com/@prendeumatou"
-[[params.socialIcons]]
-  name = "twitch"
-  url = "https://www.twitch.tv/prendeumatou"
-[[params.socialIcons]]
-  name = "youtube"
-  url = "https://www.youtube.com/@prendeumatou"
-[[params.socialIcons]]
-  name = "linkedin"
-  url = "https://linkedin.com/in/prendeumatou"
-[[params.socialIcons]]
-  name = "email"
-  url = "mailto:contato@prendeumatou.com.br"
+  # --- REDES SOCIAIS ---
+  [[params.socialIcons]]
+    name = "instagram"
+    url = "https://www.instagram.com/prendeumatou"
+  [[params.socialIcons]]
+    name = "twitter"
+    url = "https://x.com/prendeumatou"
+  [[params.socialIcons]]
+    name = "facebook"
+    url = "https://www.facebook.com/prendeumatou"
+  [[params.socialIcons]]
+    name = "tiktok"
+    url = "https://www.tiktok.com/@prendeumatou"
+  [[params.socialIcons]]
+    name = "twitch"
+    url = "https://www.twitch.tv/prendeumatou"
+  [[params.socialIcons]]
+    name = "youtube"
+    url = "https://www.youtube.com/@prendeumatou"
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:contato@prendeumatou.com.br"
 
 # --- MENU ---
 [menu]
