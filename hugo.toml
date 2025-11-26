@@ -43,7 +43,7 @@ canonifyURLs = true
   ShowCodeCopyButtons = true
   comments = false
   description = "Análises críticas sobre o Direito Penal do Inimigo e a expansão punitiva."
-  author = "Prendeu, Matou"
+  author = "Prendeu Matou"
   keywords = ["Direito Penal", "Inimigo", "Jakobs", "Garantismo", "Punitivismo", "Estado de Exceção"]
   images = ["/capa_social.png"]
   
